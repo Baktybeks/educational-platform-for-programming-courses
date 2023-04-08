@@ -124,6 +124,23 @@ img {
     border-radius: 3px;
 }
 
+.dobovlenie-in-nav {
+    max-width: 80rem;
+    margin-top: 8rem;
+}
+
+.dobovlenie {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lab {
+    display: block;
+}
+
 .regis-link:hover{
     transition: all 1s;
     color: #212529;
@@ -215,6 +232,27 @@ img {
     justify-content: space-between;
 }
 
+.cont-dob-curs {
+    margin-top: 4rem;
+}
+
+.cont-dob-curs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+#dob-time, #dob-cr, #dob-photo {
+    display: block;
+}
+
+.btn-dob-curs {
+    display: block;
+    margin: 1rem auto;
+}
+
 .curses-link {
     display: flex;
     flex-wrap: wrap;
@@ -273,6 +311,9 @@ img {
 .child:hover {
     width: 11rem;
     height: 11rem;
+    background: url('../img/js.jpg');
+    background-repeat: no-repeat;
+    background-size: 11rem;
     box-shadow:  45px 45px 45px rgba(0, 0, 0, 0.30);
     transition: all 1s;
 }
@@ -517,6 +558,14 @@ img {
 
 .answers-nad-qash h2,p{
     color: #212529;
+}
+
+.btn-aw {
+    margin-top: 1rem;
+}
+
+.text-aw {
+    max-width: 100%;
 }
 
 .footer {

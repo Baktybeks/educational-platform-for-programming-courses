@@ -273,6 +273,9 @@ img {
 .child:hover {
     width: 11rem;
     height: 11rem;
+    background: url('../img/js.jpg');
+    background-repeat: no-repeat;
+    background-size: 11rem;
     box-shadow:  45px 45px 45px rgba(0, 0, 0, 0.30);
     transition: all 1s;
 }
