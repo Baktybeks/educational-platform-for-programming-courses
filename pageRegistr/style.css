@@ -56,6 +56,7 @@ img {
 }
 
 .arrow{
+    position: relative;
     font-size: 1rem;
     line-height: 2rem;
     display: flex;
@@ -80,6 +81,47 @@ img {
     transition: all 0.5s;
     content: '❯';
     transform: rotate(90deg);
+}
+
+.spisoc-cursov,.spisoc-categori,.spisoc-code, .lenguage {
+    position: absolute;
+    top: -5rem;
+    opacity: 0;
+    -webkit-transition: top 0.5s ease;
+}
+
+
+.arrow:hover .spisoc-cursov {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .spisoc-categori {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .spisoc-code {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .lenguage {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.curs-arrow {
+    color: #212529;
+}
+
+.curs-arrow:hover {
+    border-bottom: 2px solid #9E9C9C;
+    border-radius: 3px;
 }
 
 .regis-link:hover{
@@ -141,7 +183,7 @@ img {
     border-radius: 8px;
     margin-top: 1rem;
     text-align: center;
-    -webkit-transition: 1s ease;
+    -webkit-transition: background 1s ease;
 }
 
 .text-btn {
@@ -326,6 +368,8 @@ img {
 }
 
 .arrow-curs {
+    display: inline-block;
+    position: relative;
     margin: 0rem 2rem;
     font-size: 1rem;
     line-height: 2rem;
@@ -343,6 +387,28 @@ img {
 .arrow-curs:hover::after {
     transition: all 1s;
     content: '⮟';
+}
+
+.curs-comment {
+    max-height: 4rem;
+    overflow: auto;
+    position: absolute;
+    
+    opacity: 0;
+}
+
+.arrow-curs:hover ul {
+    transition: all 1s;
+    opacity: 1;
+   
+}
+
+.curs-comment li {
+    color: #212529;
+}
+
+.curs-comment li:hover {
+    border-bottom: 2px solid #9E9C9C;
 }
 
 .form-name {
@@ -379,7 +445,7 @@ img {
     background: #bdbebd;
     border: 2px solid #bdbebd;
     cursor: pointer;
-    -webkit-transition: all 1s;
+    -webkit-transition: background 1s;
 }
 
 .btn:hover {
