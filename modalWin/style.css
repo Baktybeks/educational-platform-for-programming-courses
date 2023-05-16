@@ -1,3 +1,5 @@
+/* ! Основа Страницы */
+
 body {
     box-sizing: border-box;
     font-size: 100%;
@@ -13,6 +15,8 @@ a {
     text-decoration: none;
 }
 
+/* ! Главный Блок */
+
 .wrapper {
     max-width: 100%;
     height: 100vh;
@@ -21,6 +25,8 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+/* ! Модальное окно оплаты курса */
 
 .conteiner-modal {
     max-width: 40rem;
@@ -34,6 +40,8 @@ a {
     row-gap: 0.8rem;
 }
 
+/* ! Шапка Модального окна */
+
 .block-head {
     display: flex;
     flex-direction: row;
@@ -46,6 +54,8 @@ a {
     line-height: 3.25rem;
     color: #263057;
 }
+
+/* ! Инпуты для оплаты */
 
 .conteiner-modal input{
     padding: 1rem 1.6rem;

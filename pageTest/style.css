@@ -1,3 +1,5 @@
+/* ! Основа страницы */
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -28,18 +30,28 @@ img {
     object-fit: cover;
 }
 
+
+/*!  Главный Блок */
+
 .wrapper {
     max-width: 100%;
 }
+
+
+/* !Основной Болок */
 
 .conteiner {
     max-width: 80rem;
     margin: 0 auto;
 }
 
+/* ! Шапка Блока */
+
 .head {
     margin: 1.5rem 2.5rem 0rem 1.25rem;
 }
+
+/* ! Меню сайта */
 
 .menu {
     display: flex;
@@ -203,10 +215,14 @@ img {
     transition: all 1s;
 }
 
+/* ! Основной блок с контейнером Тест */
+
 .main {
     max-width: 80rem;
     margin: 5rem auto;
 }
+
+/* ! Сам тест и информация о нем */
 
 .iscra {
     margin-top: 7rem;
@@ -250,6 +266,8 @@ img {
 .num {
     font-weight: 700;
 }
+
+/* ! Подвал Сайта */
 
 .footer {
     background: hsl(210, 11%, 15%);

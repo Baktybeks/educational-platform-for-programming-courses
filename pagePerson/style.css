@@ -1,3 +1,6 @@
+/*! Основа страницы */
+
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -23,14 +26,20 @@ img {
     object-fit: cover;
 }
 
+/*! Главный Блок */
+
 .wrapper {
     max-width: 100%;
 }
+
+/*! Сам контейнер */
 
 .conteiner {
     max-width: 80rem;
     margin: 0 auto;
 }
+
+/*! Шака сайта */
 
 .head {
     margin: 1.5rem 2.5rem 0rem 1.25rem;
@@ -198,10 +207,15 @@ img {
     transition: all 1s;
 }
 
+
+/*! Центральный блок с контентом */
+
 .main {
     max-width: 80rem;
     margin: 5rem auto;
 }
+
+/*! Шака блока MAIN */
 
 .head-name {
     color: #212529;
@@ -245,6 +259,8 @@ img {
     background: #6C757D;
     transition: all 1s;
 }
+
+/*! Карточки курсов */
 
 .libraei-curses {
     margin-top: 3rem;
@@ -330,6 +346,8 @@ img {
     transition: all 1s;
 }
 
+/*! Информацмя о курсвх */
+
 .iscra {
     margin-top: 7rem;
     display: flex;
@@ -373,6 +391,9 @@ img {
     font-weight: 700;
 }
 
+
+/* ! Оставлениие Отзывов */
+
 .reviews {
     margin: 7rem 0rem;
 }
@@ -382,6 +403,8 @@ img {
     color: #212529;
     font-size: 2rem;
 }
+
+/* ! Форма для заполнения */
 
 .form {
     margin: 5rem 0rem;
@@ -485,6 +508,8 @@ img {
     background: #F6F1F1;
 }
 
+/* ! Сами отзывы */
+
 .conteiner-people {
     max-width: 70rem;
     margin: 0 auto;
@@ -543,6 +568,9 @@ img {
 .answers-nad-qash h2,p{
     color: #212529;
 }
+
+
+/* ! Подвал Сайта */
 
 .footer {
     background: hsl(210, 11%, 15%);

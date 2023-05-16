@@ -1,3 +1,5 @@
+/* ! Основа страницы */
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -23,18 +25,27 @@ img {
     object-fit: cover;
 }
 
+/*! Основной(главный) блок */
+
 .wrapper {
     max-width: 100%;
 }
+
+/* ! Блок со всем контентом */
 
 .conteiner {
     max-width: 80rem;
     margin: 0 auto;
 }
 
+
+/* ! Шапка сайта */
+
 .head {
     margin: 1.5rem 2.5rem 0rem 1.25rem;
 }
+
+/* !Меню сайта */
 
 .menu {
     display: flex;
@@ -124,6 +135,15 @@ img {
     border-radius: 3px;
 }
 
+/* ! Регистрация */
+
+.regis-link:hover{
+    transition: all 1s;
+    color: #212529;
+}
+
+/* ! Добовление новых курсов */
+
 .dobovlenie-in-nav {
     max-width: 80rem;
     margin-top: 8rem;
@@ -141,10 +161,8 @@ img {
     display: block;
 }
 
-.regis-link:hover{
-    transition: all 1s;
-    color: #212529;
-}
+
+/* ! Блок с информацией в шапке */
 
 .block-img {
     max-width: 40rem;
@@ -215,10 +233,14 @@ img {
     transition: all 1s;
 }
 
+/* ! Главный блок с контентом */
+
 .main {
     max-width: 80rem;
     margin: 5rem auto;
 }
+
+/* ! Его шапка название Курсы */
 
 .head-name {
     color: #212529;
@@ -231,6 +253,8 @@ img {
     align-items: center;
     justify-content: space-between;
 }
+
+/* ! Добовление  Курсов */
 
 .cont-dob-curs {
     margin-top: 4rem;
@@ -247,6 +271,9 @@ img {
 #dob-time, #dob-cr, #dob-photo {
     display: block;
 }
+
+
+/* ! Кнопка загрузки */
 
 .btn-dob-curs {
     display: block;
@@ -284,6 +311,8 @@ img {
     transition: all 1s;
 }
 
+/* ! Карточки добавленых курсов */
+
 .libraei-curses {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -295,6 +324,8 @@ img {
     column-gap: 6.3rem;
     row-gap: 6.25rem;
 }
+
+/*! Карточки */
 
 .child {
     width: 10rem;
@@ -346,6 +377,34 @@ img {
     height: 4rem;
 }
 
+/* ! Кнопка Оплаты */
+
+.button-child {
+    display: block;
+    max-width: 10rem;
+    padding: 0.2rem 0.1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+}
+
+.text-btn-child {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button-child:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+/* ! Информация о курсе карьере */
+
 .iscra {
     margin-top: 7rem;
     display: flex;
@@ -389,6 +448,8 @@ img {
     font-weight: 700;
 }
 
+/* ! Оставление Отзывов */
+
 .reviews {
     margin: 7rem 0rem;
 }
@@ -398,6 +459,8 @@ img {
     color: #212529;
     font-size: 2rem;
 }
+
+/* ! Форма добавление отзыва */
 
 .form {
     margin: 5rem 0rem;
@@ -501,6 +564,8 @@ img {
     background: #F6F1F1;
 }
 
+/* ! Отзывы Пользователе */
+
 .conteiner-people {
     max-width: 70rem;
     margin: 0 auto;
@@ -531,6 +596,9 @@ img {
     font-size: 1rem;
     color: #212529;
 }
+
+
+/* !Вопросы и ответы */
 
 .answers {
     margin: 1rem 3rem;
@@ -567,6 +635,9 @@ img {
 .text-aw {
     max-width: 100%;
 }
+
+
+/* ! Подвал Сайта */
 
 .footer {
     background: hsl(210, 11%, 15%);

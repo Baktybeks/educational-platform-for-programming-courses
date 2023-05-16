@@ -1,3 +1,5 @@
+/* ! Основа страницы */
+
 body {
     box-sizing: border-box;
     font-size: 100%;
@@ -13,6 +15,8 @@ a {
     text-decoration: none;
 }
 
+/* ! Главный Блок */
+
 .wrapper {
     max-width: 100%;
     height: 100vh;
@@ -23,6 +27,8 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+/* ! Модальное окно */
 
 .content {
     max-width: 47.5rem;
@@ -38,6 +44,8 @@ a {
 .head-close {
     text-align: end;
 }
+
+/* ! ! Инпуты для входа Пользователя */
 
 .inputs {
     display: flex;

@@ -1,3 +1,5 @@
+/* ! Основа страни */
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -28,18 +30,27 @@ img {
     object-fit: cover;
 }
 
+
+/* ! Главный Блок страницы */
+
 .wrapper {
     max-width: 100%;
 }
+
+/* ! Блок с контентом */
 
 .conteiner {
     max-width: 80rem;
     margin: 0 auto;
 }
 
+/* ! Шапка сайта */
+
 .head {
     margin: 1.5rem 2.5rem 0rem 1.25rem;
 }
+
+/* ! Меню сайта */
 
 .menu {
     display: flex;
@@ -203,10 +214,14 @@ img {
     transition: all 1s;
 }
 
+/* ! Блок с Контенто */
+
 .main {
     max-width: 80rem;
     margin: 5rem auto;
 }
+
+/* ! Шапка блока Ьфшт */
 
 .head-name {
     color: #212529;
@@ -250,6 +265,8 @@ img {
     background: #6C757D;
     transition: all 1s;
 }
+
+/* !Карточки курсов */
 
 .libraei-curses {
     margin-top: 3rem;
@@ -311,6 +328,8 @@ img {
     height: 4rem;
 }
 
+/* ! Кнопка которая поменяеться когда пользователь оплатит на ПЕРЕЙТИ вместо ОПЛОТИТЬ */
+
 .button-child {
     display: block;
     max-width: 10rem;
@@ -335,6 +354,7 @@ img {
     transition: all 1s;
 }
 
+/* ! Подвал Сайта */
 
 .footer {
     background: hsl(210, 11%, 15%);
