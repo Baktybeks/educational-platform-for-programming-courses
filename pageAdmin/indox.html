@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curses</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="conteiner">
+
+            <!-- !Шапка сайта -->
+
+            <header class="head">
+                <nav class="menu">
+
+                    <!-- ! Меню Сайта -->
+
+                    <ul class="menu-link">
+                        <li class="arrow">Курсы
+                            <ul class="spisoc-cursov">
+                                <li class="curs-arrow">JavaScript</li>
+                                <li class="curs-arrow">PHP</li>
+                                <li class="curs-arrow">C#</li>
+                            </ul>
+                        </li>
+                        <li class="arrow">Категории
+                            <ul class="spisoc-categori">
+                                <li class="curs-arrow">Верстка</li>
+                                <li class="curs-arrow">Coding</li>
+                            </ul>
+                        </li>
+                        <li class="arrow">О Code Learn
+                            <ul class="spisoc-code">
+                                <li class="curs-arrow">Отзывы</li>
+                                <li class="curs-arrow">Контакты</li>
+                                <li class="curs-arrow">Вопросы</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- ! Регисрация -->
+
+                    <ul class="registr">
+                        <li class="regis-link">Выход</li>
+                        <li class="arrow">Ru
+                            <ul class="lenguage">
+                                <li class="curs-arrow">En</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- ! Добовление в меню новых курсов или какойлибо еще информации -->
+
+                <div class="dobovlenie-in-nav">
+                    <ul class="dobovlenie">
+                        <li>
+                            <lable class="lab" for="cr">Курсы</lable>
+                                <input id="cr" type="text">
+                                <button>Добавить</button>
+                        </li>
+                        <li>
+                            <lable class="lab" for="cat">Категории</lable>
+                                <input id="cat" type="text">
+                                <button>Добавить</button>
+                        </li>
+                        <li>
+                            <lable class="lab" for="cod">О Code Learn</lable>
+                                <input id="cod" type="text">
+                                <button>Добавить</button>
+                        </li>
+                        <li>
+                            <lable class="lab" for="lan">Язык</lable>
+                                <input id="lan" type="text">
+                                <button>Добавить</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ! Блок с Информацией -->
+
+                <div class="block-head">
+                    <div class="block-info">
+                        <p class="text-up-head">Бесплатные курсы программирования</p>
+                        <h1 class="logo-head">Изучи <span class="text-curs">CoDiNg</span></h1>
+                        <p class="text-info">
+                            Самый быстрый способ попробовать программирование прямо в браузере. Бесплатные курсы с тренажером. Практика после каждого урока
+                        </p>
+                        <a href="#" class="button">
+                            <sapn class="text-btn">Попробовать</sapn>
+                        </a>
+                    </div>
+                    <div class="block-img">
+                        <img src="../img/header-logo.jpg" alt="logo">
+                    </div>
+                </div>
+            </header>
+
+        </div>
+
+        <!-- ! Основной блок с контентом -->
+
+        <main class="main">
+
+            <section class="curses">
+                <header class="head-curs">
+                    <h2 class="head-name">Курсы</h2>
+                    <div class="curses-link">
+                        <a href="#" class="linck-prog"><span class="text-prog">Программирование</span></a>
+                        <a href="#" class="linck-verst"><span class="text-verst">Верстка</span></a>
+                    </div>
+                </header>
+
+                <!-- ! Добовление курсов для прохождение с инпутами-->
+
+                <div class="cont-dob-curs">
+                    <ul>
+                        <li>
+                            <label for="dob-cr">Добовление курсов</label>
+                            <input id="dob-cr" type="text">
+                        </li>
+                        <li>
+                            <label for="dob-time">Добовление времи прохождения</label>
+                            <input id="dob-time" type="number">
+                        </li>
+                        <li>
+                            <label for="dob-photo">Добавить фото</label>
+                                <input id="dob-photo" type="file" name="photo" multiple accept="img/*">
+                        </li>
+                    </ul>
+
+                    <!-- !Кнопка загрузки всей информации -->
+
+                    <button class="btn-dob-curs">Загрузить</button>
+                </div>
+
+                <!-- ! Карточки добавленыых курсов -->
+
+                <div class="libraei-curses">
+                    <ul class="libraei-curses">
+
+                        <!-- !Карточки -->
+
+                        <li class="child">
+                            <span class="child-name">JavaScript</span>
+                            <div class="info-child">
+                                <span class="time-curs">23 часа</span>
+                                <span class="num-people"><img src="../img/people.png" alt="people"> 2345</span>
+                            </div>
+                            <div>
+
+                                <!-- ! Кнопка оплаты -->
+                                <!--! Кнопка которая поменяеться когда пользователь оплатит на ПЕРЕЙТИ вместо ОПЛОТИТЬ -->
+
+                                <a href="#" class="button-child">
+                                    <sapn class="text-btn-child">Оплотить</sapn>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="child">
+                            <span class="child-name">JavaScript</span>
+                            <div class="info-child">
+                                <span class="time-curs">23 часа</span>
+                                <span class="num-people"><img src="../img/people.png" alt="people"> 2345</span>
+                            </div>
+                            <div>
+                                <a href="#" class="button-child">
+                                    <sapn class="text-btn-child">Оплотить</sapn>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="child">
+                            <span class="child-name">JavaScript</span>
+                            <div class="info-child">
+                                <span class="time-curs">23 часа</span>
+                                <span class="num-people"><img src="../img/people.png" alt="people"> 2345</span>
+                            </div>
+                            <div>
+                                <a href="#" class="button-child">
+                                    <sapn class="text-btn-child">Оплотить</sapn>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="child">
+                            <span class="child-name">JavaScript</span>
+                            <div class="info-child">
+                                <span class="time-curs">23 часа</span>
+                                <span class="num-people"><img src="../img/people.png" alt="people"> 2345</span>
+                            </div>
+                            <div>
+                                <a href="#" class="button-child">
+                                    <sapn class="text-btn-child">Оплотить</sapn>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="child">
+                            <span class="child-name">JavaScript</span>
+                            <div class="info-child">
+                                <span class="time-curs">23 часа</span>
+                                <span class="num-people"><img src="../img/people.png" alt="people"> 2345</span>
+                            </div>
+                            <div>
+                                <a href="#" class="button-child">
+                                    <sapn class="text-btn-child">Оплотить</sapn>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- ! Информация о курсе крьере -->
+
+            <section class="iscra">
+                    <div class="iscra-img">
+                        <img src="../img/iscra.jpg" alt="img">
+                    </div>
+                    <div class="iscra-info">
+                        <h2 class="iscra-head">Искра перемен в вашей карьере</h2>
+                        <p class="text-info-iscra">
+                            Выпускники <span class="name-comp">Hack Reactoring Coding Learn</span>, работающие в самых разных компаниях из разных<br/> отраслей, трансформируют технологии изнутри.
+                        </p>
+                        <ul class="text-spisoc-info">
+                            <li>Выпускник, готовый к работе, с востребованными техническими навыками</li>
+                            <li><span class="prots">100%</span> онлайн-курсы по программированию с живым обучением</li>
+                            <li>Прошлые выпускники работают более чем в <span class="num">2500</span> компаниях</li>
+                            <li>Более <span class="num">12 000</span> сильных выпускников</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <!-- ! Оставленние Отзывов -->
+            
+            <section class="reviews">
+                <div class="head-reviews">
+                    <h2>Отзывы</h2>
+                </div>
+
+                <!-- ! Форма добовление  отзыва -->
+
+                <form class="form" action="#">
+                    <div class="conteiner-form">
+                        <label for="name">
+                            <span class="form-name">Напишите свое ФИО</span></label>
+                            <input class="name-inp" type="text" id="name" placeholder="name">
+                        <div class="arrow-curs">Курсы
+                            <ul class="curs-comment">
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>C#</li>
+                            </ul>
+                        </div>
+                        <input type="file" name="photo" multiple accept="../img">
+                        <div class="conteiner-comment">
+                            <textarea class="comment" rows="5" cols="55" name="text"></textarea>
+                            <input class="btn" type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+
+                <!-- ! Отзывы пользователей -->
+
+                <div class="reviews-people">
+                    <ul class="conteiner-people">
+                        <li>
+                            <div class="img-reviews">
+                                <img src="../img/one-person.png" alt="rerson">
+                            </div>
+                            <div class="text-reviews">
+                                <h2 class="name-reviews">Александр Авдошкин</h2>
+                                <div class="curs-reviews">Курс HTML</div>
+                                <p class="coment-reviwes">
+                                    "Если бы не коронавирус, выполнил бы всё в заход (в смысле каждый день по несколько пунктов в теме). Изучаю с нуля, ваш портал очень ориентирован на новичков. Спасибо вам большое!"
+                                </p>
+
+                                <!-- ! Редоктирование или удаление оьзыва пользователя -->
+
+                                <button class="reciews-btn-red">Редоктирование</button>
+                                <button class="reciews-btn-del">Удаление</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text-reviews">
+                                <h2 class="name-reviews">Сергей Тюркин</h2>
+                                <span class="curs-reviews">Курс JavaScript</span>
+                                <p class="coment-reviwes">
+                                    "Очень всё доступно даже для полного профана вроде меня. Эта вводная по JS вошла в мой туговатый ум, складно как недостающий пазл. Всем кидаю линк на эту страничку."
+                                </p>
+                                <button class="reciews-btn-red">Редоктирование</button>
+                                <button class="reciews-btn-del">Удаление</button>
+                            </div>
+                            <div class="img-reviews">
+                                <img src="../img/two-person.png" alt="rerson">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-reviews">
+                                <img src="../img/theree-person.png" alt="rerson">
+                            </div>
+                            <div class="text-reviews">
+                                <h2 class="name-reviews">Элиях Клейман</h2>
+                                <span class="curs-reviews">Курс JavaScript</span>
+                                <p class="coment-reviwes">
+                                    "Для меня это первый курс для новичка. Понравилось тем, что вся информация структурирована и дана по мере изучения материала в иерархичном порядке, что значительно повышает и желание к обучению"
+                                </p>
+                                <button class="reciews-btn-red">Редоктирование</button>
+                                <button class="reciews-btn-del">Удаление</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- ! Вопросы и ответы  -->
+
+            <section class="answers">
+                <div class="head-answer">
+                    <h2>Вопросы и Ответы</h2>
+                </div>
+
+                <!-- ! Добовление Вопроса и ответа на вопрос -->
+
+                <div class="dob-answer-and-qwes">
+                    <div class="conteiner-dob-vopros">
+                        <div class="write-answer">
+                            <p>Вопрос</p>
+                            <input type="text">
+                        </div>
+                        <div class="write-qwesh">
+                            <p>Ответ</p>
+                            <textarea class="text-aw" rows="5" cols="55" name="text"></textarea>
+                        </div>
+
+                        <!-- !Кнопка добавить Вопрос и ответ -->
+
+                        <input class="btn-aw" type="submit" value="Добавить">
+                    </div>
+                </div>
+
+                <!-- ! Перечень самих вопросов и ответов -->
+
+                <ul class="answers-nad-qash">
+                    <li>
+                        <h2>Что такое Code Basics?</h2>
+                        <p>
+                            Это полностью бесплатная платформа для изучения основ программирования с нуля. Code Basics был создан разработчиками и сообществом Хекслет для того, чтобы любой желающий мог попробовать себя в программировании и заложить правильный фундамент для новой профессии, основанный не на запоминании специфики, а на понимании системы в целом.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>А если что-то не получается?</h2>
+                        <p>
+                            Спрашивайте! В каждом уроке есть раздел «Обсуждение». Здесь можно задать вопрос, уточнить условие задания, если оно кажется вам непонятным. Ответит наша поддержка или другие пользователи. Обсуждения доступны для всех, вы тоже можете отвечать на вопросы и помогать другим ученикам в освоении новой профессии.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Как начать обучение?</h2>
+                        <p>
+                            При выполнении практики также советуем внимательно читать вывод тестов – в нем содержится информация о том, почему решение не проходит. А еще вы можете сравнить свой результат с готовым решением. Впрочем, не советуем обращаться к нему до тех пор, пока успешно не выполните задание. Помните – вы учитесь, а не повторяете.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Как проходит обучение?</h2>
+                        <p>
+                            Достаточно просто зарегистрироваться. Регистрация на платформе бесплатная, после регистрации вы получите доступ ко всем курсам Code Basics. Выбирайте любой – и проходите.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Чему здесь можно научиться?</h2>
+                        <p>
+                            Code Learn – полностью автоматизированная онлайн платформа. Поэтому вы можете заниматься в любое удобное время, когда захотите.Курсы программирования состоят из тематических блоков, в каждом есть несколько уроков. Проходите уроки последовательно: сначала изучите теорию, потом выполните практическое упражнение прямо в браузере – система проверит его автоматически.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Для кого курсы?</h2>
+                        <p>
+                            Курсы Code Learn подходят для всех, кто начинает изучать программирование с нуля. Возраст, профессия – не имеют значения. На Code Basics занимаются взрослые и подростки, технари и чистые гуманитарии.
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Какие возможности есть для<br/> практикующих разработчиков?</h2>
+                        <p>
+                            Code Learn – проект с открытым исходным кодом. Участвовать в его развитии может любой практикующий разработчик. Исходный код доступен на GitHub . Вы можете помочь в создании новых курсов и уроков, улучшать существующие, исправлять неточности и опечатки, переводить курсы на английский язык.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- ! Подвал сайта -->
+
+        <footer class="footer">
+            <div class="conteiner-footer">
+                <div class="adress">
+                    <address>ООО «Хекслет Рус», 432071, г. Ульяновск, пр-т Нариманова, дом 1Г, оф. 23</address>
+                    <div class="tel-one">
+                        <img src="../img/icon-phone.svg" alt="phone">
+                        <a href="tel:88001002247">+8 (800) 100 22 47</a>
+                    </div>
+                    <div class="tel-two">
+                        <img src="../img/icon-phone.svg" alt="phone">
+                        <a href="tel:74950852838">+7 (495) 085 28 38</a>
+                    </div>
+                </div>
+                <div class="seti">
+                    <a href="#"><img src="../img/wath.svg" alt="icon"></a>
+                    <a href="#"><img src="../img/insta.svg" alt="icon"></a>
+                    <a href="#"><img src="../img/fase.svg" alt="icon"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

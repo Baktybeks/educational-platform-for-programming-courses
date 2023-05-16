@@ -1,0 +1,93 @@
+/* ! Основа Страницы */
+
+body {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* ! Главный Блок */
+
+.wrapper {
+    max-width: 100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ! Модальное окно оплаты курса */
+
+.conteiner-modal {
+    max-width: 40rem;
+    max-height: 34rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+
+/* ! Шапка Модального окна */
+
+.block-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-modal {
+    font-size: 2rem;
+    line-height: 3.25rem;
+    color: #263057;
+}
+
+/* ! Инпуты для оплаты */
+
+.conteiner-modal input{
+    padding: 1rem 1.6rem;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.conteiner-modal input::placeholder{
+    color: rgba(38, 48, 87, 0.5);
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+}
+
+.sqare {
+    margin-right: 0.5rem;
+}
+
+.sqare-text {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    color: #263057;
+}
+
+.modal-btn {
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 1rem 4rem;
+    color: #fff;
+    background: #3FA79E;
+    border-radius: 60px;
+}

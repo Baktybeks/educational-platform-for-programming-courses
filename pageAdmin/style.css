@@ -1,0 +1,684 @@
+/* ! Основа страницы */
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/*! Основной(главный) блок */
+
+.wrapper {
+    max-width: 100%;
+}
+
+/* ! Блок со всем контентом */
+
+.conteiner {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+
+/* ! Шапка сайта */
+
+.head {
+    margin: 1.5rem 2.5rem 0rem 1.25rem;
+}
+
+/* !Меню сайта */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.menu-link, .registr {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.arrow{
+    position: relative;
+    font-size: 1rem;
+    line-height: 2rem;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    color: #212529;
+    cursor: pointer;
+}
+
+.regis-link {
+    color: #bdbebd;
+    cursor: pointer;
+}
+
+.arrow::after {
+    content: '❯';
+    margin-left: 0.4rem;
+    -webkit-transition: 1s ease;
+}
+
+.arrow:hover::after{
+    transition: all 0.5s;
+    content: '❯';
+    transform: rotate(90deg);
+}
+
+.spisoc-cursov,.spisoc-categori,.spisoc-code, .lenguage {
+    position: absolute;
+    top: -5rem;
+    opacity: 0;
+    -webkit-transition: top 0.5s ease;
+}
+
+
+.arrow:hover .spisoc-cursov {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .spisoc-categori {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .spisoc-code {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .lenguage {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.curs-arrow {
+    color: #212529;
+}
+
+.curs-arrow:hover {
+    border-bottom: 2px solid #9E9C9C;
+    border-radius: 3px;
+}
+
+/* ! Регистрация */
+
+.regis-link:hover{
+    transition: all 1s;
+    color: #212529;
+}
+
+/* ! Добовление новых курсов */
+
+.dobovlenie-in-nav {
+    max-width: 80rem;
+    margin-top: 8rem;
+}
+
+.dobovlenie {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lab {
+    display: block;
+}
+
+
+/* ! Блок с информацией в шапке */
+
+.block-img {
+    max-width: 40rem;
+}
+
+.block-img img{
+    border-radius: 20px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+.block-info {
+    max-width: 35rem;
+    margin-top: 3rem;
+}
+
+.block-head {
+    margin-top: 6.635rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.text-up-head {
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    color: #6C757D;
+}
+
+.logo-head {
+    font-size: 4rem;
+    line-height: 3.3rem;
+    color: #212529;
+}
+
+.text-curs {
+    color: #9E9C9C;
+}
+
+.text-info {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #212529;
+}
+
+.button {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 0rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+}
+
+.text-btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+/* ! Главный блок с контентом */
+
+.main {
+    max-width: 80rem;
+    margin: 5rem auto;
+}
+
+/* ! Его шапка название Курсы */
+
+.head-name {
+    color: #212529;
+    font-size: 2rem;
+}
+
+.head-curs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ! Добовление  Курсов */
+
+.cont-dob-curs {
+    margin-top: 4rem;
+}
+
+.cont-dob-curs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+#dob-time, #dob-cr, #dob-photo {
+    display: block;
+}
+
+
+/* ! Кнопка загрузки */
+
+.btn-dob-curs {
+    display: block;
+    margin: 1rem auto;
+}
+
+.curses-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    margin-right: 3rem;
+}
+
+.text-prog, .text-verst {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    -webkit-transition: 1s ease;
+}
+
+.text-prog:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+.text-verst:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+/* ! Карточки добавленых курсов */
+
+.libraei-curses {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 6.3rem;
+    row-gap: 6.25rem;
+}
+
+/*! Карточки */
+
+.child {
+    width: 10rem;
+    height: 10rem;
+    background: #767472;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:  40px 40px 50px rgba(0, 0, 0, 0.25);
+    -webkit-transition: 1s ease;
+}
+
+.child:hover {
+    width: 11rem;
+    height: 11rem;
+    background: url('../img/js.jpg');
+    background-repeat: no-repeat;
+    background-size: 11rem;
+    box-shadow:  45px 45px 45px rgba(0, 0, 0, 0.30);
+    transition: all 1s;
+}
+
+.child-name {
+    margin-top: 20%;
+    flex: 1 0 auto;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: #fff;
+}
+
+.info-child {
+    width: 10rem;
+    height: 3rem;
+    opacity: 0.5;
+    display: flex;
+    background: #F6F1F1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-transition: 1s ease;
+}
+
+.child:hover .info-child {
+    width: 11rem;
+    height: 4rem;
+}
+
+/* ! Кнопка Оплаты */
+
+.button-child {
+    display: block;
+    max-width: 10rem;
+    padding: 0.2rem 0.1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+}
+
+.text-btn-child {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button-child:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+/* ! Информация о курсе карьере */
+
+.iscra {
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10rem;
+}
+
+.iscra-img {
+    max-width: 30%;
+}
+
+.iscra-img img{
+    border-radius: 20px;
+    box-shadow:  40px 40px 50px rgba(0, 0, 0, 0.25);
+}
+
+.text-spisoc-info {
+    list-style-type: disc;
+}
+
+.iscra-head {
+    color: #212529;
+    font-size: 2rem;
+}
+
+.text-info-iscra, .text-spisoc-info{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 3.5rem;
+    color: #212529;
+}
+
+.name-comp, .prots{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.num {
+    font-weight: 700;
+}
+
+/* ! Оставление Отзывов */
+
+.reviews {
+    margin: 7rem 0rem;
+}
+
+.head-reviews {
+    margin: 5rem 0rem;
+    color: #212529;
+    font-size: 2rem;
+}
+
+/* ! Форма добавление отзыва */
+
+.form {
+    margin: 5rem 0rem;
+}
+
+.conteiner-form {
+    max-width: 40rem;
+    margin: 0rem auto;
+}
+
+.arrow-curs {
+    display: inline-block;
+    position: relative;
+    margin: 0rem 2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #212529;
+    cursor: pointer;
+}
+
+.arrow-curs::after {
+    content: '➤';
+    margin-left: 0.4rem;
+    -webkit-transition: 1s ease;
+}
+
+.arrow-curs:hover::after {
+    transition: all 1s;
+    content: '⮟';
+}
+
+.curs-comment {
+    max-height: 4rem;
+    overflow: auto;
+    position: absolute;
+    
+    opacity: 0;
+}
+
+.arrow-curs:hover ul {
+    transition: all 1s;
+    opacity: 1;
+   
+}
+
+.curs-comment li {
+    color: #212529;
+}
+
+.curs-comment li:hover {
+    border-bottom: 2px solid #9E9C9C;
+}
+
+.form-name {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #212529;
+}
+
+.name-inp {
+    max-width: 25rem;
+    padding-left: 0.3rem;
+    padding-top: 1rem;
+    border: none;
+    background: #F6F1F1;
+    border-bottom: 2px solid #212529;
+    border-radius: 5px;
+}
+
+.conteiner-comment {
+    margin-top: 4rem;
+    display: flex;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn {
+    padding: 1rem;
+    margin-left: 4rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    background: #bdbebd;
+    border: 2px solid #bdbebd;
+    cursor: pointer;
+    -webkit-transition: background 1s;
+}
+
+.btn:hover {
+    transition: all 1s;
+    background: #6C757D;
+}
+
+.comment {
+    padding-top: 1rem;
+    border: 1px solid #6C757D;
+    border-radius: 20px;
+    background: #F6F1F1;
+}
+
+/* ! Отзывы Пользователе */
+
+.conteiner-people {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.conteiner-people li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.text-reviews {
+    margin-left: 3rem;
+}
+
+.name-reviews {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.curs-reviews, .coment-reviwes {
+    font-size: 1rem;
+    color: #212529;
+}
+
+
+/* !Вопросы и ответы */
+
+.answers {
+    margin: 1rem 3rem;
+}
+
+.head-answer {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
+.answers-nad-qash {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 11.5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.answers-nad-qash li {
+    max-width: 30rem;
+}
+
+.answers-nad-qash h2,p{
+    color: #212529;
+}
+
+.btn-aw {
+    margin-top: 1rem;
+}
+
+.text-aw {
+    max-width: 100%;
+}
+
+
+/* ! Подвал Сайта */
+
+.footer {
+    background: hsl(210, 11%, 15%);
+}
+
+.conteiner-footer {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.adress {
+    text-align: center;
+    color: #bdbebd;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tel-one a,.tel-two a {
+    color: #bdbebd;
+}
+
+.tel-one {
+    margin: 1rem 0rem;
+}
+
+.tel-one, .tel-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.seti {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 1rem 0rem;
+    border: none;
+    border-top: 2px solid #6C757D;
+}
