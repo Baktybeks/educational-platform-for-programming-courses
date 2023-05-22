@@ -1,314 +1,146 @@
-/* ! Основа страницы */
-
-html {
-    box-sizing: border-box;
-    font-size: 100%;
-}
-
-body {
-    background: #F5F5F5;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
 }
 
-img {
-    max-width: 100%;
-    object-fit: cover;
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-size: 100%;
+    background: rgb(245, 245, 245);
 }
-
-
-/*!  Главный Блок */
 
 .wrapper {
-    max-width: 100%;
-}
-
-
-/* !Основной Болок */
-
-.conteiner {
     max-width: 80rem;
     margin: 0 auto;
-}
-
-/* ! Шапка Блока */
-
-.head {
-    margin: 1.5rem 2.5rem 0rem 1.25rem;
-}
-
-/* ! Меню сайта */
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    row-gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.menu-link, .registr {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 1rem;
-    flex-direction: row;
-    align-items: center;
-    column-gap: 2rem;
-}
-
-.arrow{
+    overflow: hidden;
     position: relative;
-    font-size: 1rem;
-    line-height: 2rem;
-    display: flex;
-    font-weight: 400;
-    align-items: center;
-    color: #212529;
-    cursor: pointer;
 }
 
-.regis-link {
-    color: #bdbebd;
-    cursor: pointer;
-}
-
-.arrow::after {
-    content: '❯';
-    margin-left: 0.4rem;
-    -webkit-transition: 1s ease;
-}
-
-.arrow:hover::after{
-    transition: all 0.5s;
-    content: '❯';
-    transform: rotate(90deg);
-}
-
-.spisoc-cursov,.spisoc-categori,.spisoc-code, .lenguage {
+.epllipse-one, .epllipse-two{
     position: absolute;
-    top: -5rem;
-    opacity: 0;
-    -webkit-transition: top 0.5s ease;
+    width: 97.75rem;
+    height: 97.75rem;
+    border-radius: 100%;
+    left: -155px;
+    top: -460px;
+    background: rgba(72, 135, 227, 0.23);
 }
 
-
-.arrow:hover .spisoc-cursov {
-    transition: all 0.5s;
-    opacity: 1;
-    top: 2rem;
+.epllipse-two {
+    left: -620px;
+    top: 1420px;
 }
 
-.arrow:hover .spisoc-categori {
-    transition: all 0.5s;
-    opacity: 1;
-    top: 2rem;
-}
-
-.arrow:hover .spisoc-code {
-    transition: all 0.5s;
-    opacity: 1;
-    top: 2rem;
-}
-
-.arrow:hover .lenguage {
-    transition: all 0.5s;
-    opacity: 1;
-    top: 2rem;
-}
-
-.curs-arrow {
-    color: #212529;
-}
-
-.curs-arrow:hover {
-    border-bottom: 2px solid #9E9C9C;
-    border-radius: 3px;
-}
-
-.regis-link:hover{
-    transition: all 1s;
-    color: #212529;
-}
-
-.block-img {
-    max-width: 40rem;
-}
-
-.block-img img{
-    border-radius: 20px;
-    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
-}
-
-.block-info {
-    max-width: 35rem;
-    margin-top: 3rem;
-}
-
-.block-head {
-    margin-top: 6.635rem;
+.container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    row-gap: 3rem;
+    flex-direction: column;
+    min-height: 142.6rem;
 }
 
-.text-up-head {
-    font-size: 1.25rem;
-    line-height: 1.2rem;
-    color: #6C757D;
-}
-
-.logo-head {
-    font-size: 4rem;
-    line-height: 3.3rem;
-    color: #212529;
-}
-
-.text-curs {
-    color: #9E9C9C;
-}
-
-.text-info {
-    font-size: 1.25rem;
-    line-height: 2rem;
-    font-weight: 300;
-    color: #212529;
-}
-
-.button {
-    display: block;
-    max-width: 10rem;
-    padding: 1rem 1rem;
-    background: #9E9C9C;
-    border-radius: 8px;
-    margin-top: 1rem;
-    text-align: center;
-    -webkit-transition: background 1s ease;
-}
-
-.text-btn {
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.8rem;
-    color: #fff;
-}
-
-.button:hover {
-    background: #6C757D;
-    transition: all 1s;
-}
-
-/* ! Основной блок с контейнером Тест */
-
-.main {
-    max-width: 80rem;
-    margin: 5rem auto;
-}
-
-/* ! Сам тест и информация о нем */
-
-.iscra {
-    margin-top: 7rem;
+.header {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10rem;
+    margin-top: 3.124rem;
+    z-index: 1;
 }
 
-.iscra-img {
-    max-width: 30%;
+.text-logo {
+    font-size: 3rem;
+    margin-left: 6.25rem;
 }
 
-.iscra-img img{
+.img-logo {
+    padding-top: 4rem;
+}
+
+.line {
+    width: 62.5rem;
+    border-radius: 5px;
+    border: 10px solid rgb(34, 38, 42);
+}
+
+.name-test {
+    width: 40rem;
+    height: 9rem;
+    border-bottom: 20px solid rgb(34, 38, 42);
     border-radius: 20px;
-    box-shadow:  40px 40px 50px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    margin: 3rem 0rem 3rem 20rem;
 }
 
-.text-spisoc-info {
-    list-style-type: disc;
-}
-
-.iscra-head {
-    color: #212529;
-    font-size: 2rem;
-}
-
-.text-info-iscra, .text-spisoc-info{
-    font-weight: 500;
-    font-size: 1rem;
+.name-test h2 {
+    font-size: 1.56rem;
     line-height: 3.5rem;
-    color: #212529;
+    padding-left: 2.6rem;
+    padding-top: 3.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.27);
 }
 
-.name-comp, .prots{
-    font-style: italic;
-    font-weight: 400;
+.form {
+    min-width: 40rem;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.num {
-    font-weight: 700;
+.conteiner-form {
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border-left: 15px solid #fff;
+    transition: all 1s;
+    background: #FFF;
+    z-index: 1;
 }
 
-/* ! Подвал Сайта */
+.header-form {
+    font-size: 1.56rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+    padding: 2.5rem 3rem 0rem;
+}
+
+.conteiner-form:focus-within {
+    border-left: 15px solid rgb(34, 38, 42);
+}
+
+.conteiner-form {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+}
+
+.conteiner-form li{
+    padding-left: 3rem;
+}
+
+.conteiner-form li:last-child{
+    padding-bottom: 2.5rem;
+}
+
+.conteiner-form label {
+    width: 35rem;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: baseline;
+}
 
 .footer {
-    background: hsl(210, 11%, 15%);
-}
-
-.conteiner-footer {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.adress {
-    text-align: center;
-    color: #bdbebd;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.tel-one a,.tel-two a {
-    color: #bdbebd;
-}
-
-.tel-one {
-    margin: 1rem 0rem;
-}
-
-.tel-one, .tel-two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1rem;
-}
-
-.seti {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    column-gap: 2rem;
-    padding: 1rem 0rem;
-    border: none;
-    border-top: 2px solid #6C757D;
+    flex-shrink: 0;
 }

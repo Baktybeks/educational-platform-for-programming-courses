@@ -1,0 +1,314 @@
+/* ! Основа страницы */
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+/*!  Главный Блок */
+
+.wrapper {
+    max-width: 100%;
+}
+
+
+/* !Основной Болок */
+
+.conteiner {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+/* ! Шапка Блока */
+
+.head {
+    margin: 1.5rem 2.5rem 0rem 1.25rem;
+}
+
+/* ! Меню сайта */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.menu-link, .registr {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.arrow{
+    position: relative;
+    font-size: 1rem;
+    line-height: 2rem;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    color: #212529;
+    cursor: pointer;
+}
+
+.regis-link {
+    color: #bdbebd;
+    cursor: pointer;
+}
+
+.arrow::after {
+    content: '❯';
+    margin-left: 0.4rem;
+    -webkit-transition: 1s ease;
+}
+
+.arrow:hover::after{
+    transition: all 0.5s;
+    content: '❯';
+    transform: rotate(90deg);
+}
+
+.spisoc-cursov,.spisoc-categori,.spisoc-code, .lenguage {
+    position: absolute;
+    top: -5rem;
+    opacity: 0;
+    -webkit-transition: top 0.5s ease;
+}
+
+
+.arrow:hover .spisoc-cursov {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .spisoc-categori {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .spisoc-code {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .lenguage {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.curs-arrow {
+    color: #212529;
+}
+
+.curs-arrow:hover {
+    border-bottom: 2px solid #9E9C9C;
+    border-radius: 3px;
+}
+
+.regis-link:hover{
+    transition: all 1s;
+    color: #212529;
+}
+
+.block-img {
+    max-width: 40rem;
+}
+
+.block-img img{
+    border-radius: 20px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+.block-info {
+    max-width: 35rem;
+    margin-top: 3rem;
+}
+
+.block-head {
+    margin-top: 6.635rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.text-up-head {
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    color: #6C757D;
+}
+
+.logo-head {
+    font-size: 4rem;
+    line-height: 3.3rem;
+    color: #212529;
+}
+
+.text-curs {
+    color: #9E9C9C;
+}
+
+.text-info {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #212529;
+}
+
+.button {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+}
+
+.text-btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+/* ! Основной блок с контейнером Тест */
+
+.main {
+    max-width: 80rem;
+    margin: 5rem auto;
+}
+
+/* ! Сам тест и информация о нем */
+
+.iscra {
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10rem;
+}
+
+.iscra-img {
+    max-width: 30%;
+}
+
+.iscra-img img{
+    border-radius: 20px;
+    box-shadow:  40px 40px 50px rgba(0, 0, 0, 0.25);
+}
+
+.text-spisoc-info {
+    list-style-type: disc;
+}
+
+.iscra-head {
+    color: #212529;
+    font-size: 2rem;
+}
+
+.text-info-iscra, .text-spisoc-info{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 3.5rem;
+    color: #212529;
+}
+
+.name-comp, .prots{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.num {
+    font-weight: 700;
+}
+
+/* ! Подвал Сайта */
+
+.footer {
+    background: hsl(210, 11%, 15%);
+}
+
+.conteiner-footer {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.adress {
+    text-align: center;
+    color: #bdbebd;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tel-one a,.tel-two a {
+    color: #bdbebd;
+}
+
+.tel-one {
+    margin: 1rem 0rem;
+}
+
+.tel-one, .tel-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.seti {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 1rem 0rem;
+    border: none;
+    border-top: 2px solid #6C757D;
+}

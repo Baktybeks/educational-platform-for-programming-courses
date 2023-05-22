@@ -45,6 +45,10 @@ a {
     text-align: end;
 }
 
+.go {
+    color: #fff;
+}
+
 /* ! ! Инпуты для входа Пользователя */
 
 .inputs {
