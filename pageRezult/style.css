@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -75,6 +79,30 @@ body {
     align-items: center;
     margin: 2rem 0rem;
     column-gap: 6rem;
+}
+
+.button {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+    z-index: 4;
+}
+
+.text-btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button:hover {
+    background: #6C757D;
+    transition: all 1s;
 }
 
 #pie-progress-bar {
