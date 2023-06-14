@@ -17,7 +17,6 @@ export const getCourseApi = (id) => {
     return async (dispatch) => {
         try {
             const {data} = await $api.get(`api/courses/${id}`)
-            console.log("datalog",data)
             dispatch(setCourse(data))
         } catch (e) {
             dispatch(setError(e.message))

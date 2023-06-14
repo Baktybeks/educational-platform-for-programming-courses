@@ -2,6 +2,10 @@
     margin: 1.5rem 2.5rem 0 1.25rem;
 }
 
+.registr {
+    gap: 20px;
+}
+
 .menu {
     display: flex;
     flex-direction: row;

@@ -15,7 +15,6 @@ function Signup() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [email, setEmail] = useState('')
-    console.log(username, password,email )
 
     const submitRegHandler = async (e) => {
         e.preventDefault()

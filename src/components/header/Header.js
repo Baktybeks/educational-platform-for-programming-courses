@@ -12,7 +12,6 @@ function Header() {
     const navigate = useNavigate()
     const {courses} = useSelector(state => state.courseReducer)
     const {isAuth, user} = useSelector(state => state.userReducer)
-    console.log(isAuth, user.role)
 
     const logOut = () => {
         dispatch(setIsAuth(false))
@@ -28,7 +27,7 @@ function Header() {
     return (
         <header className={classes.head}>
             <nav className={classes.menu}>
-                <a href="/"><h1>Главная</h1></a>
+                <Link to={links.base}><h1>Главная</h1></Link>
                 <ul className={classes.menu_link}>
                     <li className={classes.arrow}>Курсы
                         <ul className={classes.list_courses}>
@@ -56,7 +55,7 @@ function Header() {
                     </li>
                 </ul>
                 {isAuth ?
-                    <div>
+                    <div className={classes.registr}>
                         {user.name}
                         <button onClick={logOut}>Выход</button>
                         {user.role === "ADMIN"

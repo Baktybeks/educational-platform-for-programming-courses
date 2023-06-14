@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
 import classes from "./addingCourses.module.css"
 import {addCourse} from "../../axios/coursesApi"
-import {useDispatch} from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
 
 const textRegExp = /^.{2,500}$/
 const timeRegExp = /^.{1,500}$/
 
 function AddingCourses() {
     const dispatch = useDispatch()
+
+    const {user} = useSelector(state => state.userReducer)
 
     const [image, setImage] = useState('')
     const [titleCourse, setTitleCourse] = useState('')
@@ -52,7 +54,9 @@ function AddingCourses() {
         formData.append('description2', description2)
         formData.append('time', time)
         formData.append('people', people)
+        formData.append('userId', user.id)
         formData.append('img', image)
+
         dispatch(addCourse(formData))
     }
 

@@ -27,7 +27,6 @@ export const loginApi = (email, password) => {
     return async (dispatch) => {
         try {
             const response = await $api.post('api/user/login/', {email, password})
-            console.log(response)
             if (response.status === 200) {
                 alert('Вы успешно авторизованы')
                 localStorage.setItem('token', response.data.token)

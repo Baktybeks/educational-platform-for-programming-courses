@@ -14,8 +14,6 @@ function CoursePage() {
 
     const {course} = useSelector(state => state.courseReducer)
 
-    console.log("setCourse",course)
-
     useEffect(() => {
         dispatch(getCourseApi(id))
     }, [dispatch, id])
