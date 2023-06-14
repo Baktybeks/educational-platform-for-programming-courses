@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 142.6rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3.124rem;
+    z-index: 1;
+}
+
+.text_logo {
+    font-size: 3rem;
+    margin-left: 6.25rem;
+}
+
+.img_logo {
+    padding-top: 4rem;
+}
+
+.line {
+    width: 62.5rem;
+    border-radius: 5px;
+    border: 10px solid rgb(34, 38, 42);
+}
+
+.name_test {
+    width: 40rem;
+    height: 9rem;
+    border-bottom: 20px solid rgb(34, 38, 42);
+    border-radius: 20px;
+    background: #fff;
+    margin: 3rem 0 3rem 20rem;
+}
+
+.name_test h2 {
+    font-size: 1.56rem;
+    line-height: 3.5rem;
+    padding-left: 2.6rem;
+    padding-top: 3.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+}
+
+.form {
+    min-width: 40rem;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_form {
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border-left: 15px solid #fff;
+    transition: all 1s;
+    background: #FFF;
+    z-index: 1;
+}
+
+.header_form {
+    font-size: 1.56rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.27);
+    padding: 2.5rem 3rem 0;
+}
+
+.container_form:focus-within {
+    border-left: 15px solid rgb(34, 38, 42);
+}
+
+.container_form {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+}
+
+.container_form li{
+    padding-left: 3rem;
+}
+
+.container_form li:last-child{
+    padding-bottom: 2.5rem;
+}
+
+.container_form label {
+    width: 35rem;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: baseline;
+}
+
+.button {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+    z-index: 4;
+}
+
+.text_btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+
+.footer {
+    flex-shrink: 0;
+}

@@ -1,0 +1,171 @@
+.adding_courses {
+    max-width: 80rem;
+    margin-top: 2rem;
+}
+
+.adding {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lab {
+    display: block;
+}
+
+.head_name {
+    color: #212529;
+    font-size: 2rem;
+}
+
+.head_curs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont_dob_curs {
+    margin-top: 4rem;
+}
+
+.cont_dob_curs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+#dob_time, #dob_cr, #dob_photo {
+    display: block;
+}
+
+.btn_dob_curs {
+    display: block;
+    margin: 1rem auto;
+}
+
+.courses_link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    margin-right: 3rem;
+}
+
+.text_prog, .text_verst {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    -webkit-transition: 1s ease;
+}
+
+.text_prog:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+.text_verst:hover {
+    background: #6C757D;
+    transition: all 1s;
+}
+
+/* ! Карточки добавленых курсов */
+
+.library_courses {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 6.3rem;
+    row-gap: 6.25rem;
+}
+
+/*! Карточки */
+
+.child {
+    width: 10rem;
+    height: 10rem;
+    background: #767472;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow:  40px 40px 50px rgba(0, 0, 0, 0.25);
+    -webkit-transition: 1s ease;
+}
+
+.child:hover {
+    width: 11rem;
+    height: 11rem;
+    background: green;
+    background-size: 11rem;
+    box-shadow:  45px 45px 45px rgba(0, 0, 0, 0.30);
+    transition: all 1s;
+}
+
+.child_name {
+    margin-top: 20%;
+    flex: 1 0 auto;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: #fff;
+}
+
+.info_child {
+    width: 10rem;
+    height: 3rem;
+    opacity: 0.5;
+    display: flex;
+    background: #F6F1F1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    -webkit-transition: 1s ease;
+}
+
+.child:hover .info_child {
+    width: 11rem;
+    height: 4rem;
+}
+
+/* ! Кнопка Оплаты */
+
+.button_child {
+    display: block;
+    max-width: 10rem;
+    padding: 0.2rem 0.1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+}
+
+.text_btn_child {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button_child:hover {
+    background: #6C757D;
+    transition: all 1s;
+}

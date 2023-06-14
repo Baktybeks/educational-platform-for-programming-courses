@@ -1,0 +1,23 @@
+.head_answer {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+}
+
+.answers_nad_qash {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 11.5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.answers_nad_qash li {
+    max-width: 30rem;
+}
+
+.answers_nad_qash h2,p{
+    color: #212529;
+}

@@ -1,0 +1,68 @@
+.block_img {
+    max-width: 40rem;
+}
+
+.block_img img{
+    border-radius: 20px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+.block_info {
+    max-width: 35rem;
+    margin-top: 3rem;
+}
+
+.block_head {
+    margin-top: 6.635rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.text_up_head {
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    color: #6C757D;
+}
+
+.logo_head {
+    font-size: 4rem;
+    line-height: 3.3rem;
+    color: #212529;
+}
+
+.text_curs {
+    color: #9E9C9C;
+}
+
+.text_info {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #212529;
+}
+
+.button {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 0;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+}
+
+.text_btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.button:hover {
+    background: #6C757D;
+    transition: all 1s;
+}

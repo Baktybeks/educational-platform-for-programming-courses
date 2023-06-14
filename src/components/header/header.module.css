@@ -1,0 +1,95 @@
+.head {
+    margin: 1.5rem 2.5rem 0 1.25rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.menu_link, .registr {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.arrow{
+    position: relative;
+    font-size: 1rem;
+    line-height: 2rem;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    color: #212529;
+    cursor: pointer;
+}
+
+.regis_link {
+    color: #bdbebd;
+    cursor: pointer;
+}
+
+.arrow::after {
+    content: '❯';
+    margin-left: 0.4rem;
+    -webkit-transition: 1s ease;
+}
+
+.arrow:hover::after{
+    transition: all 0.5s;
+    content: '❯';
+    transform: rotate(90deg);
+}
+
+.list_courses,.list_categories,.list_code, .language {
+    position: absolute;
+    top: -5rem;
+    opacity: 0;
+    -webkit-transition: top 0.5s ease;
+}
+
+
+.arrow:hover .list_courses {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .list_categories {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .list_code {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.arrow:hover .language {
+    transition: all 0.5s;
+    opacity: 1;
+    top: 2rem;
+}
+
+.curs_arrow {
+    color: #212529;
+}
+
+.curs_arrow:hover {
+    border-bottom: 2px solid #9E9C9C;
+    border-radius: 3px;
+}
+
+.regis_link:hover{
+    transition: all 1s;
+    color: #212529;
+}

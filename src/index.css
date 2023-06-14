@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  background: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/*! Главный Блок */
+
+.wrapper {
+  max-width: 100%;
+}
+
+/*! Сам контейнер */
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
