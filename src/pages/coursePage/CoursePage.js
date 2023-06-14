@@ -21,7 +21,7 @@ function CoursePage() {
     }, [dispatch, id])
 
     return (
-        <section className={classes.kurs}>
+        <section className={`${classes.kurs} container`}>
             <div className={classes.block_head}>
                 <div className={classes.block_info}>
                     <h1 className={classes.logo_head}>Изучи <span className={classes.text_curs}>{course.titleCourse}</span></h1>
@@ -42,10 +42,11 @@ function CoursePage() {
                     <p className={classes.text_info_spark}>
                         {course.description2}
                     </p>
+                    <Link className={classes.button} to={links.test}>
+                        <span className={classes.text_btn}>Далее</span>
+                    </Link>
                 </div>
-                <Link className={classes.button} to={links.test}>
-                    <span className={classes.text_btn}>Далее</span>
-                </Link>
+
             </div>
         </section>
     )

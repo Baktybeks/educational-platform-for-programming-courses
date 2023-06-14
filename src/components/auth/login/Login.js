@@ -1,29 +1,31 @@
 import React, {useState} from 'react'
 import classes from "./login.module.css"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import {links} from "../../../links/links"
 import close from "../../../img/x.png"
 import {useDispatch} from "react-redux"
 import {loginApi} from "../../../axios/usersApi"
 
 function Login() {
-
     const dispatch = useDispatch()
-
-    const [loginUsername, setLoginUsername] = useState('')
+    const navigate = useNavigate()
+    const [loginEmail, setLoginEmail] = useState('')
     const [loginPassword, setLoginPassword] = useState('')
 
 
-    const isLoginFormValid = () => loginUsername && loginPassword
+    const isLoginFormValid = () => loginEmail && loginPassword
 
     const submitLoginHandler = (e) => {
         e.preventDefault()
         if (isLoginFormValid()) {
-            dispatch(loginApi(loginUsername, loginPassword))
+            dispatch(loginApi(loginEmail, loginPassword))
+            navigate(links.base)
         } else {
             alert('Введите все данные')
         }
+
     }
+
 
     return (
         <div className={classes.content}>
@@ -34,19 +36,22 @@ function Login() {
             </div>
 
             <form onSubmit={submitLoginHandler} className={classes.inputs}>
-                    <h1 className={classes.go}>Вход</h1>
-                    <input
-                        type="text"
-                        name="email"
-                        value={loginUsername}
-                        onChange={e => setLoginUsername(e.target.value)}
-                        placeholder="email"/>
-                    <input type="text"
-                           name="password"
-                           value={loginPassword}
-                           onChange={e => setLoginPassword(e.target.value)}
-                           placeholder="password"/>
-                    <Link to={links.base}>войти</Link>
+                <h1 className={classes.go}>Вход</h1>
+                <input
+                    type="email"
+                    name="email"
+                    value={loginEmail}
+                    placeholder="email"
+                    onChange={e => setLoginEmail(e.target.value)}
+                />
+                <input
+                    type="password"
+                    name="password"
+                    value={loginPassword}
+                    placeholder="password"
+                    onChange={e => setLoginPassword(e.target.value)}
+                />
+                <button type="submit">войти</button>
             </form>
 
         </div>

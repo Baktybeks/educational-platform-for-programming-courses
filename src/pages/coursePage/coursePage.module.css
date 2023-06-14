@@ -67,7 +67,7 @@
 .spark {
     margin-top: 7rem;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-items: center;
     justify-content: center;
     column-gap: 10rem;
@@ -80,6 +80,13 @@
 .spark_img img{
     border-radius: 20px;
     box-shadow:  40px 40px 50px rgba(0, 0, 0, 0.25);
+}
+
+.spark_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .text_list_info {

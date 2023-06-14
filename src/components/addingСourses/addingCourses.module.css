@@ -28,7 +28,11 @@
 }
 
 .cont_dob_curs {
-    margin-top: 4rem;
+    margin: 50px auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .cont_dob_curs ul {
@@ -168,4 +172,8 @@
 .button_child:hover {
     background: #6C757D;
     transition: all 1s;
+}
+
+.btns  {
+    display: flex;
 }
