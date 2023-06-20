@@ -1,0 +1,115 @@
+.block_img {
+    max-width: 40rem;
+}
+
+.block_img img{
+    border-radius: 20px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+.block_info {
+    max-width: 35rem;
+    margin-top: 3rem;
+}
+
+.block_head {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.text_up_head {
+    font-size: 1.25rem;
+    line-height: 1.2rem;
+    color: #6C757D;
+}
+
+.logo_head {
+    font-size: 4rem;
+    line-height: 3.3rem;
+    color: #212529;
+}
+
+.text_curs {
+    color: #9E9C9C;
+}
+
+.text_info {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: #212529;
+}
+
+
+
+.button {
+    display: block;
+    max-width: 10rem;
+    padding: 1rem 1rem;
+    background: #9E9C9C;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    -webkit-transition: background 1s ease;
+}
+
+.text-btn {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #fff;
+}
+
+.spark {
+    margin-top: 7rem;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
+    column-gap: 10rem;
+}
+
+.spark_img {
+    max-width: 30%;
+}
+
+.spark_img img{
+    border-radius: 20px;
+    box-shadow:  40px 40px 50px rgba(0, 0, 0, 0.25);
+}
+
+.spark_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.text_list_info {
+    list-style-type: disc;
+}
+
+.spark-head {
+    color: #212529;
+    font-size: 2rem;
+}
+
+.text_info_spark, .text_list_info{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 3.5rem;
+    color: #212529;
+}
+
+.name_comp, .prots{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.num {
+    font-weight: 700;
+}

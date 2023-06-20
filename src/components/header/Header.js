@@ -10,6 +10,7 @@ function Header() {
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
+
     const {courses} = useSelector(state => state.courseReducer)
     const {isAuth, user} = useSelector(state => state.userReducer)
 

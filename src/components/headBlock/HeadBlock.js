@@ -1,6 +1,8 @@
 import React from 'react'
 import classes from "./headBlock.module.css"
 import header_logo from "../../img/header-logo.jpg"
+import {Link} from "react-router-dom"
+import {links} from "../../links/links"
 
 function HeadBlock() {
     return (
@@ -11,9 +13,9 @@ function HeadBlock() {
                     Самый быстрый способ попробовать программирование прямо в браузере. Бесплатные курсы с
                     тренажером. Практика после каждого урока
                 </p>
-                <a href="../pageKurs/index.html" className={classes.button}>
-                    <span className={classes.text_btn}>Попробовать</span>
-                </a>
+                <li className={classes.button}>
+                    <Link to={links.test}>Попробовать</Link>
+                </li>
             </div>
             <div className={classes.block_img}>
                 <img src={header_logo} alt="logo"/>

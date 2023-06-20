@@ -2,12 +2,18 @@ import React from 'react'
 import {useNavigate} from "react-router-dom"
 import classes from "./сourse.module.css"
 import people from "../../img/people.png"
+import {useSelector} from "react-redux"
 
 function Course({course}) {
     const navigate = useNavigate()
 
+    const {isAuth} = useSelector(state => state.userReducer)
+
     const clickHandler = () => {
-        navigate(`/courses/${course.id}/`)
+        if (!isAuth) {
+            return alert("Авторизуйтесь")
+        }
+        navigate(`/pay/${course.id}/`)
     }
 
     return (

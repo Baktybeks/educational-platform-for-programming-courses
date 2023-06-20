@@ -1,0 +1,75 @@
+.container_content {
+    max-width: 80rem;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.container_form_internships {
+    padding: 1rem 5.8rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.head_form {
+    max-width: 27rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+}
+
+.one_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.one_block_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.one_block input{
+    width: 800px;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.77);
+    border-radius: 30px;
+    padding: 1rem 1rem;
+}
+
+.one_block textarea{
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.77);
+    border-radius: 30px;
+    padding: 1rem 1rem;
+}
+
+.one_block input::placeholder {
+    color: rgba(0, 0, 0, 0.77);
+}
+
+.btn_send {
+    width: 300px;
+    background: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+}
+
+.text_conditions {
+    margin-top: 3rem;
+    color: #f50000;
+}
+
+.two_block label{
+    color: #2130d2;
+}
+
+.two_block input{
+    padding-top: 1rem;
+    color: #1ff100;
+}

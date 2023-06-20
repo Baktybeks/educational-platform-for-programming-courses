@@ -1,11 +1,11 @@
 .head_reviews {
-    margin: 5rem 0;
+    margin: 1rem 0;
     color: #212529;
     font-size: 2rem;
 }
 
 .form {
-    margin: 5rem 0;
+    margin: 1rem 0;
 }
 
 .container_form {
@@ -65,7 +65,7 @@
 }
 
 .name_inp {
-    max-width: 25rem;
+    max-width: 100%;
     padding-left: 0.3rem;
     padding-top: 1rem;
     border: none;
@@ -111,7 +111,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: nowrap;
 }
 

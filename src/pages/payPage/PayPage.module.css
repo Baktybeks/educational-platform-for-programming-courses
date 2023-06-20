@@ -55,3 +55,9 @@
     background: #3FA79E;
     border-radius: 60px;
 }
+
+.one_block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

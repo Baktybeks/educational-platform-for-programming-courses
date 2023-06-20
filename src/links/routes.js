@@ -28,10 +28,6 @@ export const authRoutes = [
         path: links.result_page,
         element: <ResultPage/>
     },
-    {
-        path: links.pay,
-        element: <PayPage/>
-    },
 ]
 
 export const publicRoutes = [
@@ -52,7 +48,12 @@ export const publicRoutes = [
         element: <CoursePage/>
     },
     {
+        path: links.pay + '/:id/',
+        element: <PayPage/>
+    },
+    {
         path: '*',
         element: <Navigate to='/'/>
     },
+
 ]
